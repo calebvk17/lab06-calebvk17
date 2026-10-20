@@ -17,7 +17,7 @@ def calculate():
     bill = float(entry.get())
     tip = bill  * 0.15
     total = bill + tip
-    result.config(text=f'Tip: ${tip}   Total: ${total}')
+    result.config(text=f'Tip: ${tip:.2f}   Total: ${total:.2f}')
 
 root = tk.Tk()
 root.title("Tip Calculator")
